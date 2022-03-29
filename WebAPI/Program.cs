@@ -9,6 +9,8 @@ builder.Services.AddCors(options =>
         builder =>
         {
             builder.WithOrigins("https://luna.pinkjelly.org/",
+                    "https://localhost:3000",
+                    "https://localhost:3001",
                     "http://localhost:3000",
                     "http://localhost:3001"
                     )
