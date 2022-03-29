@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-6.0#attr
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "MyPolicy",
+    options.AddPolicy(name: MyAllowSpecificOrigins,
         builder =>
         {
             builder.WithOrigins("https://luna.pinkjelly.org/",
