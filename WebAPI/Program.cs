@@ -12,7 +12,8 @@ builder.Services.AddCors(options =>
                     "https://localhost:3000",
                     "https://localhost:3001",
                     "http://localhost:3000",
-                    "http://localhost:3001"
+                    "http://localhost:3001",
+                    "http://localhost:8080"
                     )
                 .WithMethods("PUT", "DELETE", "GET");
         });
@@ -47,5 +48,8 @@ app.UseCors(MyAllowSpecificOrigins);
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
