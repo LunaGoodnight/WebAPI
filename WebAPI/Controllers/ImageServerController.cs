@@ -18,8 +18,11 @@ public class ImageServerController : ControllerBase
         
         var imageServerInfoList = new ImageServerInfo[]
         {
-            new ImageServerInfo{ Cn = true, Remark = "test" },
-            new ImageServerInfo{ Cn = false, Remark = "miou" },
+            new ImageServerInfo{ Cn = true, Remark = "test", Domain = "www.cookiesbydesign.com", isDefault = false},
+            new ImageServerInfo{ Cn = true, Remark = "gourmet", Domain = "www.cuteLuna.com", isDefault = true},
+            new ImageServerInfo{ Cn = false, Remark = "miou", Domain = "www.yahoo.com", isDefault = true },
+            new ImageServerInfo{ Cn = false, Remark = "emoji", Domain = "www.yahoo.com", isDefault = false },
+            new ImageServerInfo{ Cn = false, Remark = "delectable", Domain = "www.yahoo.com", isDefault = false },
         };
 
         return imageServerInfoList.ToList();
