@@ -27,4 +27,12 @@ public class ImageServerController : ControllerBase
 
         return imageServerInfoList.ToList();
     }
+    
+    
+
+    [HttpGet("UpdateImageDomain")]
+    public ActionResult UpdateImageDomain()
+    {
+        return Ok();
+    }
 }
