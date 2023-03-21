@@ -21,8 +21,8 @@ public class ImageServerController : ControllerBase
             new ImageServerInfo{ Cn = true, Remark = "test", Domain = "www.cookiesbydesign.com", isDefault = false},
             new ImageServerInfo{ Cn = true, Remark = "gourmet", Domain = "www.cuteLuna.com", isDefault = true},
             new ImageServerInfo{ Cn = false, Remark = "miou", Domain = "www.yahoo.com", isDefault = true },
-            new ImageServerInfo{ Cn = false, Remark = "emoji", Domain = "www.yahoo.com", isDefault = false },
-            new ImageServerInfo{ Cn = false, Remark = "delectable", Domain = "www.yahoo.com", isDefault = false },
+            new ImageServerInfo{ Cn = false, Remark = "emoji", Domain = "www.google.com", isDefault = false },
+            new ImageServerInfo{ Cn = false, Remark = "delectable", Domain = "www.microsoft.com", isDefault = false },
         };
 
         return imageServerInfoList.ToList();
